@@ -1,0 +1,61 @@
+/* Reset y base */
+
+/* box-sizing: para que tenga en cuenta el padding y el margin en el tamaño total*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Configuración general*/
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.cabezera {
+    text-align: center;
+    padding: 1rem;    
+}
+
+/* Titulo de la cabezera sin márgenes extra y color*/
+.Titulo{
+    margin: 0;
+    color: aqua;
+    text-align: center;
+}
+
+#contenido-principal{
+    padding: 1rem;
+}
+
+/*Centraremos cabezera y pie*/
+
+
+/* Clase="targeta" */
+
+.targeta{
+    background-color: #fff;
+    width: min(900px, 95%);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2PX 5PX rgba(0, 0, 0, 0.4);
+}
+
+.pie{
+    color: #333;
+    font-size: 14px;
+    background: #805c5c;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
