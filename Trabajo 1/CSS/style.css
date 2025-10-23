@@ -6,13 +6,17 @@ header{
     text-align: center;
     padding: 1rem;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;   
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 main{
     background-color: beige;
@@ -38,8 +42,8 @@ footer{
 }
 
 .imagen-receta img{
+    margin: 0 auto;
     margin-bottom: 20px;
-    align-items: center;
     max-width: 100%;
     border-radius: 10px;
 }
