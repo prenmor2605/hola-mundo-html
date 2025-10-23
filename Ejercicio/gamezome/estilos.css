@@ -44,11 +44,40 @@ body{
     background-color: #fff;
     width: min(900px, 95%);
     margin: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 2PX 5PX rgba(0, 0, 0, 0.4);
+    border: 1px solid #ddd;
 }
 
+/*
+Listas en dos columnoas: usamos flxbox para alinear dos elementos en horizontal
+*/
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap; /*Sirve para cuando se encoja se valla abajo*/
+}
+
+/*Ajustes visuales de las listas*/
+
+.lista {
+    padding-left: 20px; /*Espacio para las viñetas*/
+}
+
+.lista li{
+    margin: 0.25rem 0;
+}
+
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+/*Estilo pie de página*/
 .pie{
     color: #333;
     font-size: 14px;
