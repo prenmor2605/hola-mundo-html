@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Tu portal de videojuegos</title>
+    <meta name="description" content="Página web sobre videojuegos">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="Pagina " href="../Index.html">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="barnd">
+            <!-- <h1 class="Titulo">GameZone</h1> -->
+            <img src="/Ejercicio/gamezome/image/gamezone-logo.png" alt="Logotipo GameZone" class="logo">
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guias</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Registro.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <!-- Formulario de busqueda-->
+    <section class="tarjeta">
+        <form name="buscar-juego" action="Buscar.html" method="get">
+            <!-- label conecta visulamente y funcionalmente con el campo-->
+            <label for="busqueda">Buscar Juego:</label>           
+            <input type="search" id="busqueda" name="busqueda" placeholder="Escribe el nombre del Juego...">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+        <section class="tarjeta">
+        <form action="contanto.php" method="get">
+            <fieldset> <!--Para agrupar varios campos del form-->
+                <legend>Lista desplegable</legend> <!-- Para añadir leyenda al fieldser-->
+                <label for="categoria">Categoría::</label>
+                <select name="categoria" id="categoria">
+                    <option selected disabled>Seleciona una opcion</option>
+                    <option value="fantasia">Fantasía</option>
+                    <option value="rol">Rol</option>
+                    <option value="Aventuras">Aventuras</option>
+                    <option value="Lucha">Lucha</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Input tipo radio</legend>
+                <p>Selecciona la Plataforma</p>
+
+                <input type="radio" name="Plataforma" id="PC">
+                <label for="pc">PC</label>
+                <br>
+
+                <input type="radio" name="Plataforma" id="ps5">
+                <label for="ps5">PS5</label>
+                <br>
+
+                <input type="radio" name="Plataforma" id="Nintendo" value="Nintendo">
+                <label for="Nintendo">Nintendo</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Input typo checkbox</legend>
+                <p>Selecciona la Plataforma</p>
+
+                <input type="checkbox" name="videoconsola" id="PC">
+                <label for="pc"></label>
+                <br>
+
+                <input type="checkbox" name="videoconsola" id="ps5" checked>
+                <label for="ps5">PS5</label>
+                <br>
+
+                <input type="checkbox" name="videoconsola" id="Nintendo" value="Nintendo">
+                <label for="ps5">Nintendo</label>
+                <br>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Cada tipo de fecha</legend>
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="fecha-hora">Fecha hora</label>
+                <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+            </fieldset>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10">Deja aqui un mensaje</textarea>
+
+
+            <input type ="submit" value = "Buscar">
+            <input type="reset" value="Limpiar Formulario">
+        </form>
+    </section>
+    </main>
+    <footer class="pie">
+        <p>&copy;2025 Todos los derechos reservados</p> 
+    </footer>
+</body>
+<script>
+</script>
+</html>
